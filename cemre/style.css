@@ -1,0 +1,63 @@
+canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+}
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+}
+
+/* Yazı katmanı */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #770505;
+  text-shadow: 0 0 10px #770505;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  font-size: 1.6rem;   /* Küçültüldü (önceden 3rem idi) */
+  margin: 0;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.text-overlay p {
+  font-size: 0.9rem;   /* Daha küçük alt yazı */
+  margin-top: 8px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Parlama animasyonu */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 8px #770505, 0 0 15px #770505;
+  }
+  to {
+    text-shadow: 0 0 20px #770505, 0 0 40px #770505;
+  }
+}
+
+
+/* Parlama animasyonu */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff4d88, 0 0 20px #ff4d88;
+  }
+  to {
+    text-shadow: 0 0 30px #ff80b0, 0 0 60px #ff0088;
+  }
+}
